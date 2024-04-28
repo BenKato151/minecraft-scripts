@@ -14,14 +14,14 @@ waiting_time = 5
 if __name__ == '__main__':
     try:
         mouse_button_choice = input("0 for left click, 1 for right click\n")
-        key_choice = input("What key do you want to be pressed?\nOptions:\n\t- space\n")
+        key_choice = input("What key do you want to be pressed?\nOptions:\n\t- space: y\n")
         delay = 0.5
         if mouse_button_choice == "0":
             mouse_button_pressed = Button.left
         elif mouse_button_choice == "1":
             mouse_button_pressed = Button.right
 
-        if key_choice == "space":
+        if key_choice == "y":
             key_pressed = Key.space
         print(f"Waiting {waiting_time} seconds for you so you can change the window")
         sleep(waiting_time)
